@@ -18,7 +18,7 @@
 
 
             <a wire:navigate href="{{ route('register') }}"
-                class="font-medium text-gray-900 transition duration-[200ms] hover:text-amber-700 dark:text-slate-50 dark:hover:text-amber-500">Daftar</a>
+                class="font-medium text-gray-900 transition duration-200 hover:text-orange-400 dark:text-slate-50 dark:hover:text-amber-500">Daftar</a>
 
             <a wire:navigate href="{{ route('login') }}" type="button" class="btn btn-primary rounded-full">
                 Login

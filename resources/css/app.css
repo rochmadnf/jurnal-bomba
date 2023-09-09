@@ -4,13 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+#nprogress .bar {
+    @apply !h-1 !bg-orange-400 dark:!bg-amber-600;
+}
+
+#nprogress .bar .peg {
+    @apply !shadow !shadow-orange-600 dark:!shadow-amber-800;
+}
+
+#nprogress .spinner {
+    @apply !hidden;
+}
+
 @layer components {
     .navbar {
         @apply sticky left-0 top-0 z-10 dark:bg-gray-950;
     }
 
     .btn-theme {
-        @apply rounded-full p-1 hover:bg-slate-300 dark:hover:bg-gray-600;
+        @apply rounded-full p-1 hover:bg-orange-400 hover:text-slate-100 dark:hover:bg-amber-600;
     }
 
     .btn {
@@ -21,6 +33,6 @@
     }
 
     .btn-primary {
-        @apply bg-amber-700 hover:bg-amber-800 focus:ring-amber-300 dark:bg-amber-600 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
+        @apply bg-orange-400 hover:bg-orange-600 focus:ring-orange-500 dark:bg-amber-600 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
     }
 }
