@@ -6,7 +6,7 @@
             @svg('icon-moon-stars', 'dt-icon-d h-5 w-5')
             @svg('icon-sun', 'dt-icon-l h-5 w-5 hidden')
         </button>
-        <div class="absolute -left-0.5 top-0" x-show="open" id="ddThemeList">
+        <div class="absolute -left-0.5 top-0" x-cloak x-show="open" id="ddThemeList">
             <div
                 class="flex flex-col items-center justify-center space-y-1 rounded-full border border-gray-500 p-1 dark:border-slate-400">
                 <button data-btn-theme="light" class="btn-theme">

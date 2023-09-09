@@ -15,6 +15,26 @@
 #nprogress .spinner {
     @apply !hidden;
 }
+[x-cloak] {
+    @apply !hidden;
+}
+
+.nav-link {
+    @apply rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 dark:hover:bg-amber-600 dark:hover:text-slate-50 dark:hover:shadow-lg dark:hover:shadow-amber-600/80
+    dark:focus:bg-amber-600 dark:focus:text-slate-50 dark:focus:shadow-md dark:focus:shadow-amber-600/80;
+}
+
+.nav-link.active {
+    @apply dark:bg-amber-600 dark:text-slate-50 dark:shadow-md dark:shadow-amber-600/80;
+}
+
+.menu-item {
+    @apply block min-w-max px-6 py-2 font-medium tracking-wide transition-all duration-300 ease-out dark:hover:bg-slate-50/80 dark:hover:text-amber-700;
+}
+
+.menu-item.active {
+    @apply dark:bg-slate-50/80 dark:text-amber-700;
+}
 
 @layer components {
     .navbar {
