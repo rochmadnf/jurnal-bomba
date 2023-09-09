@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer components {
+    .btn-theme {
+        @apply rounded-full p-1 dark:hover:bg-gray-600;
+    }
+
     .btn {
         @apply px-5 py-2.5 rounded-lg text-center text-sm font-medium text-white inline-flex items-center focus:ring-4 focus:outline-none;
     }

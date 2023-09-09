@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("livewire:navigated", () => {
     let currentTheme = localStorage.getItem("ui-theme");
 
     if (currentTheme === null) {
@@ -9,10 +9,10 @@ window.addEventListener("load", () => {
     setMode(currentTheme);
 });
 
-const btnThemes = document.querySelectorAll(".btn-theme");
+const btnThemes = document.querySelectorAll("[data-btn-theme]");
 btnThemes.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        const theme = e.currentTarget.getAttribute("data-theme");
+        const theme = e.currentTarget.getAttribute("data-btn-theme");
         setMode(theme);
         document.getElementById("ddThemeMode").click();
     });
