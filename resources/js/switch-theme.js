@@ -1,12 +1,9 @@
 window.addEventListener("livewire:navigated", () => {
-    let currentTheme = localStorage.getItem("ui-theme");
+    initMode();
+});
 
-    if (currentTheme === null) {
-        localStorage.setItem("ui-theme", "dark");
-        currentTheme = "dark";
-    }
-
-    setMode(currentTheme);
+window.addEventListener("load", () => {
+    initMode();
 });
 
 const btnThemes = document.querySelectorAll("[data-btn-theme]");
@@ -17,6 +14,17 @@ btnThemes.forEach((btn) => {
         document.getElementById("ddThemeMode").click();
     });
 });
+
+function initMode() {
+    let currentTheme = localStorage.getItem("ui-theme");
+
+    if (currentTheme === null) {
+        localStorage.setItem("ui-theme", "dark");
+        currentTheme = "dark";
+    }
+
+    setMode(currentTheme);
+}
 
 function setMode(theme) {
     if (theme === "dark") {
