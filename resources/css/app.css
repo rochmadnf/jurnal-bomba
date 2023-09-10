@@ -38,7 +38,7 @@
 
 @layer components {
     .navbar {
-        @apply sticky left-0 top-0 z-10 dark:bg-gray-950;
+        @apply sticky left-0 top-0 z-10 border-b border-b-slate-900/20 bg-white dark:border-b-slate-300/30 dark:bg-slate-900;
     }
 
     .btn-theme {

@@ -4,7 +4,7 @@
         <a wire:navigate href="{{ route('home') }}" class="flex items-center">
             <img class="mr-4 h-14 rounded-xl" src="{{ asset('img/logo.png') }}" alt="Bomba Logo">
             <div class="flex flex-col">
-                <h1 class="font-bungee text-3xl font-bold">Bomba</h1>
+                <h1 class="font-bungee text-3xl font-bold text-yellow-200">Bomba</h1>
                 <h3 class="text-sm font-semibold uppercase">Jurnal Pembangunan Daerah</h3>
             </div>
         </a>
