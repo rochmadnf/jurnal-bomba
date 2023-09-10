@@ -7,9 +7,9 @@
             @svg('icon-sun', 'dt-icon-l h-5 w-5 hidden')
             @svg('icon-desktop', 'dt-icon-s h-5 w-5')
         </button>
-        <div class="absolute -right-0.5 top-0" x-cloak x-show="open" id="ddThemeList">
+        <div class="absolute -right-0.5 -top-0.5" x-cloak x-show="open" id="ddThemeList">
             <div
-                class="flex flex-row-reverse items-center justify-center space-x-1 rounded-full border border-gray-500 p-1 dark:border-slate-400">
+                class="flex flex-row-reverse items-center justify-center space-x-1 rounded-full border border-slate-900/20 bg-accent-1 p-1.5 dark:border-slate-300/20 dark:bg-slate-900">
                 <button data-btn-theme="light" class="btn-theme">
                     @svg('icon-sun', 'h-5 w-5')
                 </button>

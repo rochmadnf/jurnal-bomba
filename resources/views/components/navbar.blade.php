@@ -4,7 +4,7 @@
         <a wire:navigate href="{{ route('home') }}" class="flex items-center">
             <img class="mr-4 h-14 rounded-xl" src="{{ asset('img/logo.png') }}" alt="Bomba Logo">
             <div class="flex flex-col">
-                <h1 class="font-bungee text-3xl font-bold text-yellow-200">Bomba</h1>
+                <h1 class="font-bungee text-3xl font-bold text-orange-400 dark:text-yellow-200">Bomba</h1>
                 <h3 class="text-sm font-semibold uppercase">Jurnal Pembangunan Daerah</h3>
             </div>
         </a>
@@ -38,9 +38,8 @@
             </ul>
         </div>
 
-
-        {{-- auth button --}}
-        <div class="relative flex items-center space-x-4">
+        {{-- buttons --}}
+        <div class="relative flex items-center space-x-4 border-l pl-2 dark:border-l-slate-700/80">
             <x-dropdown-theme />
 
             <a wire:navigate href="{{ route('register') }}"

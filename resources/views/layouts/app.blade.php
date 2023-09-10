@@ -39,8 +39,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="relative max-w-[1440px] bg-slate-50 text-gray-900 antialiased dark:bg-slate-900 dark:text-gray-300">
-    <header class="bg-slate-200 dark:bg-gray-800">
+<body class="relative max-w-[1440px] bg-accent-1 text-gray-900 antialiased dark:bg-slate-900 dark:text-gray-300">
+    <header class="bg-accent-1 dark:bg-gray-800">
         <x-navbar />
     </header>
 

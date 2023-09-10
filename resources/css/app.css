@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 #nprogress .bar {
-    @apply !h-1 !bg-orange-400 dark:!bg-amber-600;
+    @apply dark:!bg-dark-accent-1 !h-1 !bg-orange-400;
 }
 
 #nprogress .bar .peg {
@@ -20,29 +20,29 @@
 }
 
 .nav-link {
-    @apply rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 dark:hover:bg-amber-600 dark:hover:text-slate-50 dark:hover:shadow-lg dark:hover:shadow-amber-600/80
-    dark:focus:bg-amber-600 dark:focus:text-slate-50 dark:focus:shadow-md dark:focus:shadow-amber-600/80;
+    @apply dark:hover:bg-dark-accent-1 dark:focus:bg-dark-accent-1 dark:hover:shadow-dark-accent-1/80 dark:focus:shadow-dark-accent-1/80 rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 hover:bg-orange-400
+    hover:text-white hover:shadow-lg hover:shadow-orange-400/80 focus:bg-orange-400 focus:text-white focus:shadow-md focus:shadow-orange-400/80;
 }
 
 .nav-link.active {
-    @apply dark:bg-amber-600 dark:text-slate-50 dark:shadow-md dark:shadow-amber-600/80;
+    @apply dark:bg-dark-accent-1 dark:shadow-dark-accent-1/80 bg-orange-400 text-white shadow-md shadow-orange-400/80;
 }
 
 .menu-item {
-    @apply block min-w-max px-6 py-2 font-medium tracking-wide transition-all duration-300 ease-out dark:hover:bg-slate-50/80 dark:hover:text-amber-700;
+    @apply block min-w-max px-6 py-2 font-medium tracking-wide transition-all duration-300 ease-out dark:hover:bg-[#fff6eb] dark:hover:text-gray-900;
 }
 
 .menu-item.active {
-    @apply dark:bg-slate-50/80 dark:text-amber-700;
+    @apply dark:bg-[#fff6eb] dark:text-gray-900;
 }
 
 @layer components {
     .navbar {
-        @apply sticky left-0 top-0 z-10 border-b border-b-slate-900/20 bg-white dark:border-b-slate-300/30 dark:bg-slate-900;
+        @apply bg-accent-1 sticky left-0 top-0 z-10 border-b border-b-slate-900/20 dark:border-b-slate-300/20 dark:bg-slate-900;
     }
 
     .btn-theme {
-        @apply rounded-full p-1 hover:bg-orange-400 hover:text-slate-100 dark:hover:bg-amber-600;
+        @apply dark:hover:bg-dark-accent-1 rounded-full p-1 hover:bg-orange-400 hover:text-slate-100;
     }
 
     .btn {
@@ -53,6 +53,6 @@
     }
 
     .btn-primary {
-        @apply bg-orange-400 hover:bg-orange-600 focus:ring-orange-500 dark:bg-amber-600 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
+        @apply dark:bg-dark-accent-1 bg-orange-400 hover:bg-orange-600 focus:ring-orange-500 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
     }
 }
