@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="mx-auto flex flex-wrap items-center justify-between p-4">
+    <div class="mx-auto flex flex-wrap items-center justify-between px-6 py-4">
         {{-- logo --}}
         <a wire:navigate href="{{ route('home') }}" class="flex items-center">
             <img class="mr-4 h-14 rounded-xl" src="{{ asset('img/logo.png') }}" alt="Bomba Logo">
@@ -39,7 +39,7 @@
         </div>
 
         {{-- buttons --}}
-        <div class="relative flex items-center space-x-4 border-l pl-2 dark:border-l-slate-700/80">
+        <div class="relative flex items-center space-x-4 border-l pl-4 dark:border-l-slate-700/80">
             <x-dropdown-theme />
 
             <a wire:navigate href="{{ route('register') }}"

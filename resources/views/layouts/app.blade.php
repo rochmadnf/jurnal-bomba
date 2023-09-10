@@ -39,12 +39,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="relative max-w-[1440px] bg-accent-1 text-gray-900 antialiased dark:bg-slate-900 dark:text-gray-300">
+<body class="max-w-[1440px] bg-accent-1 text-gray-900 antialiased dark:bg-slate-900 dark:text-gray-300">
     <header class="bg-accent-1 dark:bg-gray-800">
         <x-navbar />
     </header>
 
-    <main>
+    <main class="px-6">
         {{ $slot }}
     </main>
 </body>

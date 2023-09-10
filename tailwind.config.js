@@ -14,6 +14,11 @@ module.exports = {
             fontFamily: {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
                 bungee: ["Bungee", ...defaultTheme.fontFamily.serif],
+                spectral: ["Spectral", ...defaultTheme.fontFamily.serif],
+                "source-sans": [
+                    "'Source Sans 3'",
+                    ...defaultTheme.fontFamily.sans,
+                ],
             },
             colors: {
                 // use when light mode

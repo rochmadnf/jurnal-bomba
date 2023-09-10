@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700&family=Spectral:wght@400;500;600;700&family=Source+Sans+3&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -38,7 +38,7 @@
 
 @layer components {
     .navbar {
-        @apply bg-accent-1 sticky left-0 top-0 z-10 border-b border-b-slate-900/20 dark:border-b-slate-300/20 dark:bg-slate-900;
+        @apply bg-accent-1 sticky left-0 top-0 z-50 border-b border-b-slate-900/20 dark:border-b-slate-300/20 dark:bg-slate-900;
     }
 
     .btn-theme {
@@ -50,6 +50,14 @@
     }
     .btn-sm {
         @apply px-3 py-2;
+    }
+
+    .btn-lg {
+        @apply px-6 py-3 text-lg;
+    }
+
+    .btn-xl {
+        @apply px-8 py-4 text-xl;
     }
 
     .btn-primary {
