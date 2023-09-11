@@ -10,8 +10,8 @@
                     <label for="journals"
                         class="ml-2 select-none font-source-sans text-xl tracking-wider dark:text-white dark:group-focus-within:text-amber-500 dark:peer-checked:text-amber-500">Jurnal</label>
                 </div>
-                <div class="group items-center selection:flex">
-                    <input id="articles" type="radio" value="articles" name="filter_search"
+                <div class="group flex items-center">
+                    <input id="articles" checked type="radio" value="articles" name="filter_search"
                         class="peer h-5 w-5 border-gray-300 bg-gray-100 text-orange-400 focus:ring-2 focus:ring-orange-400 dark:border-gray-600 dark:bg-gray-700 dark:text-amber-600 dark:ring-offset-gray-800 dark:focus:ring-amber-600">
                     <label for="articles"
                         class="ml-2 select-none font-source-sans text-xl tracking-wider dark:text-white dark:group-focus-within:text-amber-500 dark:peer-checked:text-amber-500">Artikel</label>
@@ -23,7 +23,7 @@
                     class="flex items-center space-x-1 rounded-md border border-slate-600/90 py-4 pl-2 pr-4 focus:border-amber-600 group-focus-within/search:border-amber-600">
                     <input type="text" name="keyword"
                         class="block w-full border-0 bg-transparent text-xl text-white outline-0 placeholder:uppercase placeholder:text-slate-600 focus:border-none focus:outline-0 focus:ring-0"
-                        placeholder="Katakunci">
+                        placeholder="Katakunci...">
                     <button class="btn btn-lg btn-primary">
                         @svg('icon-magnifying-glass', 'h-6 w-6 mr-2')
                         <span class="uppercase">Cari</span>
