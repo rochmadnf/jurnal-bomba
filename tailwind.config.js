@@ -7,6 +7,7 @@ module.exports = {
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
+        "./storage/framework/views/*.php",
         "./node_modules/flowbite/**/*.js",
     ],
     theme: {
@@ -33,5 +34,9 @@ module.exports = {
             },
         },
     },
-    plugins: [require("flowbite/plugin")],
+    plugins: [
+        require("flowbite/plugin"),
+        require("@tailwindcss/typography"),
+        require("tailwindcss-hero-patterns"),
+    ],
 };
