@@ -3,6 +3,7 @@
 namespace App\Livewire\Pages\Auth;
 
 use Artesaos\SEOTools\Facades\SEOTools;
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -14,6 +15,7 @@ class Register extends Component
         SEOTools::metatags()->setDescription('Halaman untuk mendaftar akun');
     }
 
+    #[Layout('layouts.console')]
     public function render()
     {
         return view('pages.auth.register');
