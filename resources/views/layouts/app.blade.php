@@ -41,12 +41,23 @@
 
 <body class="max-w-[1440px] bg-accent-1 text-gray-900 antialiased dark:bg-slate-900 dark:text-gray-300">
     <header class="bg-accent-1 dark:bg-gray-800">
+        <div id="shadow-navbar" class="hidden w-full bg-transparent md:h-[90px]"></div>
         <x-navbar />
     </header>
 
-    <main class="px-6">
-        {{ $slot }}
-    </main>
+    @if (in_array(url()->current(), [route('home'), route('login'), route('register')]))
+        <main class="px-6">
+            {{ $slot }}
+        </main>
+    @else
+        <main class="mt-12 grid place-content-center gap-10 md:grid-cols-9 md:px-48">
+            <div class="md:col-span-6">
+                {{ $slot }}
+            </div>
+            <x-navside />
+
+        </main>
+    @endif
 </body>
 
 </html>
