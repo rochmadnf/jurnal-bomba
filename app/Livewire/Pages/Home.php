@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Master\IndexedBy;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Title;
@@ -18,6 +19,8 @@ class Home extends Component
 
     public function render(): View
     {
-        return view('pages.home');
+        return view('pages.home', [
+            'indexedBies' => IndexedBy::orderBy('order')->get(),
+        ]);
     }
 }

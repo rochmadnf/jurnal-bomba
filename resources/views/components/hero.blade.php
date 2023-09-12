@@ -1,8 +1,17 @@
-<div class="flex h-fit min-h-[625px] items-center justify-between">
-    <div class="space-y-16">
-        <h1 for="journal_search" class="font-spectral text-5xl font-bold">Temukan jurnal & artikel.</h1>
+<div
+    class="to-gray-white relative z-30 -mx-6 flex h-fit items-center justify-center bg-gradient-to-b from-slate-900 via-slate-800 to-slate-600 md:p-[6.475rem]">
 
-        <form class="space-y-6 pl-2">
+    {{-- background pattern --}}
+    <div
+        class="absolute -z-10 h-full w-full opacity-[0.55] dark:heropattern-topography-slate-300/10 2xl:[clip-path:polygon(0_0,100%_0,100%_50%,70%_26%,30%_26%,0_50%)]">
+    </div>
+
+    <div class="space-y-20">
+        <h1 for="journal_search" class="font-spectral text-[5.5rem] font-bold leading-[1] dark:text-white">Temukan jurnal
+            & artikel.</h1>
+
+        <form class="space-y-8 pl-2">
+            {{-- filter --}}
             <div class="mb-5 flex space-x-10">
                 <div class="group flex items-center">
                     <input id="journals" type="radio" value="journals" name="filter_search"
@@ -18,9 +27,10 @@
                 </div>
             </div>
 
+            {{-- keyword --}}
             <div class="group/search mb-5">
                 <div
-                    class="flex items-center space-x-1 rounded-md border border-slate-600/90 py-4 pl-2 pr-4 focus:border-amber-600 group-focus-within/search:border-amber-600">
+                    class="flex items-center space-x-1 rounded-md border border-slate-400/60 py-4 pl-2 pr-4 focus:border-amber-600 group-focus-within/search:border-amber-600 group-focus-within/search:ring-1 group-focus-within/search:ring-amber-600">
                     <input type="text" name="keyword"
                         class="block w-full border-0 bg-transparent text-xl text-white outline-0 placeholder:uppercase placeholder:text-slate-600 focus:border-none focus:outline-0 focus:ring-0"
                         placeholder="Katakunci...">
@@ -32,6 +42,7 @@
             </div>
         </form>
 
+        {{-- statistic --}}
         <div class="grid w-full grid-cols-3 divide-x-2 divide-slate-400/30 pl-2">
             <div class="flex flex-col space-y-1 pr-6">
                 <h3 class="font-source-sans text-4xl font-bold">1</h3>
@@ -46,9 +57,5 @@
                 <p class="text-xl font-medium uppercase">Artikel</p>
             </div>
         </div>
-    </div>
-
-    <div class="" x-show="true" x-transition.delay.100ms x-transition.duration.500ms>
-        Hello
     </div>
 </div>

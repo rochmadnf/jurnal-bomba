@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 #nprogress .bar {
-    @apply dark:!bg-dark-accent-1 !h-1 !bg-orange-400;
+    @apply !h-1 !bg-orange-400 dark:!bg-dark-accent-1;
 }
 
 #nprogress .bar .peg {
@@ -20,12 +20,20 @@
 }
 
 .nav-link {
-    @apply dark:hover:bg-dark-accent-1 dark:focus:bg-dark-accent-1 dark:hover:shadow-dark-accent-1/80 dark:focus:shadow-dark-accent-1/80 rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 hover:bg-orange-400
-    hover:text-white hover:shadow-lg hover:shadow-orange-400/80 focus:bg-orange-400 focus:text-white focus:shadow-md focus:shadow-orange-400/80;
+    @apply rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 hover:bg-orange-400 hover:text-white hover:shadow-lg hover:shadow-orange-400/80 focus:bg-orange-400
+    focus:text-white focus:shadow-md focus:shadow-orange-400/80 dark:hover:bg-dark-accent-1 dark:hover:shadow-dark-accent-1/80 dark:focus:bg-dark-accent-1 dark:focus:shadow-dark-accent-1/80;
 }
 
 .nav-link.active {
-    @apply dark:bg-dark-accent-1 dark:shadow-dark-accent-1/80 bg-orange-400 text-white shadow-md shadow-orange-400/80;
+    @apply bg-orange-400 text-white shadow-md shadow-orange-400/80 dark:bg-dark-accent-1 dark:shadow-dark-accent-1/80;
+}
+
+.navside-link {
+    @apply flex w-full items-center px-4 py-2 transition duration-150 dark:hover:text-amber-500;
+}
+
+.navside-link.active {
+    @apply dark:text-amber-500;
 }
 
 .menu-item {
@@ -38,11 +46,11 @@
 
 @layer components {
     .navbar {
-        @apply bg-accent-1 sticky left-0 top-0 z-50 border-b border-b-slate-900/20 dark:border-b-slate-300/20 dark:bg-slate-900;
+        @apply sticky left-0 top-0 z-50 w-full border-b border-b-slate-900/20 bg-accent-1 dark:border-b-slate-300/20 dark:bg-slate-900;
     }
 
     .btn-theme {
-        @apply dark:hover:bg-dark-accent-1 rounded-full p-1 hover:bg-orange-400 hover:text-slate-100;
+        @apply rounded-full p-1 hover:bg-orange-400 hover:text-slate-100 dark:hover:bg-dark-accent-1;
     }
 
     .btn {
@@ -61,6 +69,6 @@
     }
 
     .btn-primary {
-        @apply dark:bg-dark-accent-1 bg-orange-400 hover:bg-orange-600 focus:ring-orange-500 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
+        @apply bg-orange-400 hover:bg-orange-600 focus:ring-orange-500 dark:bg-dark-accent-1 dark:hover:bg-amber-700 dark:focus:ring-amber-800;
     }
 }
