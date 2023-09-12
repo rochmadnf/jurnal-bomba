@@ -24,7 +24,7 @@
                     Dewan Redaksi
                 </x-navlink>
 
-                <x-navlink menuName="policy" :dropdown="true">
+                <x-navlink :active="request()->is('policy*')" menuName="policy" :dropdown="true">
                     Kebijakan
                 </x-navlink>
 
