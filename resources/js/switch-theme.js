@@ -33,7 +33,6 @@ btnThemes.forEach((btn) => {
 
 function initMode() {
     let currentTheme = localStorage.getItem("ui-theme");
-
     if (currentTheme === null) {
         currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
@@ -42,6 +41,7 @@ function initMode() {
     }
 
     setMode(currentTheme);
+    setBodyTexture();
 }
 
 function setIcon(theme) {
@@ -79,4 +79,9 @@ function setMode(theme) {
         setIcon(theme);
         localStorage.removeItem("ui-ref");
     }
+}
+
+function setBodyTexture() {
+    const elTexture = document.getElementById("body-texture");
+    elTexture.style.backgroundImage = `url(${location.protocol}//${location.host}/img/logo-outline-sm.png)`;
 }
