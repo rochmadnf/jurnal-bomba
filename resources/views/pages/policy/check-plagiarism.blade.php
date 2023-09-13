@@ -3,7 +3,7 @@
         <p>
             Naskah yang diajukan ke <strong>Jurnal Bomba</strong> akan dilakukan pengecekan plagiarisme menggunakan alat
             pendeteksi plagiarisme <a target="_blank" href="https://turnitin.com">Turnitin</a> dan <a target="_blank"
-                href="https://plagiarismcheckerx.com">Plagiarism Checker X</a>.
+                href="https://www.copyscape.com">Copy Scape</a>.
         </p>
 
         <p>
