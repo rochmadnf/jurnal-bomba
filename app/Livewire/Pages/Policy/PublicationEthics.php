@@ -9,8 +9,9 @@ use Livewire\Component;
 #[Title('Etika Publikasi')]
 class PublicationEthics extends Component
 {
-    public function mount(){
-        SEOTools::metatags()->setDescription('Halaman Informasi terkait Etika Publikasi pada Bomba: Jurnal Pembangunan Daerah')
+    public function mount()
+    {
+        SEOTools::metatags()->setDescription('Halaman Informasi terkait Etika Publikasi pada Bomba: Jurnal Pembangunan Daerah');
     }
     public function render()
     {
