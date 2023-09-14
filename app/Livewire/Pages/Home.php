@@ -15,6 +15,7 @@ class Home extends Component
     public function mount(): void
     {
         SEOTools::setDescription('Bomba: Jurnal Pembangunan Daerah &mdash; merupakan jurnal ilmiah yang diterbitkan oleh Badan Riset dan Inovasi Daerah Provinsi Sulawesi Tengah. Jurnal ini berisi hasil penelitian, kajian, dan naskah akademis berfokus pada lingkup pembangunan daerah yang terbit dua kali setiap tahun pada Juli dan Desember.');
+        SEOTools::metatags()->addKeyword(['jurnal', 'bomba', 'jurnal bomba', 'jurnal daerah sulawesi tengah', 'sulawesi tengah']);
     }
 
     public function render(): View
