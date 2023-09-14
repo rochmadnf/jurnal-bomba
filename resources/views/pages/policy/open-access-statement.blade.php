@@ -1,6 +1,6 @@
 <div class="space-y-6">
     <x-page-content subTitle="Pernyataan Akses Terbuka">
-        <img class="mx-auto !mb-10 w-1/2" src="{{ asset('img/additional/open-access-logo.png') }}" alt="Open Access Logo">
+        <img class="mx-auto !mb-10 w-1/2" src="{{ asset('logo/constants/open-access.png') }}" alt="Open Access Logo">
         <p>
             <strong>Bomba: Jurnal Pembangunan Daerah</strong> menyediakan akses terbuka langsung ke kontennya dengan
             prinsip untuk membuat hasil-hasil penelitian dapat tersedia secara gratis kepada publik guna mendukung
