@@ -9,7 +9,7 @@
                 <a href="{{ $by->url }}"
                     class="group flex items-center rounded-xl px-4 py-2 transition duration-200 hover:bg-slate-200 dark:hover:bg-white">
                     <img width="{{ intval($by->width) * 16 }}" class="grayscale group-hover:grayscale-0"
-                        src="{{ asset('logo/indexes/' . $by->name . '.png?v=' . $by->version) }}"
+                        src="{{ asset('storage/logo/indexes/' . $by->name . '.png?v=' . $by->version) }}"
                         alt="{{ $by->name }}">
                 </a>
             @endforeach

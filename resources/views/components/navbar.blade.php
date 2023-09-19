@@ -2,7 +2,7 @@
     <div class="mx-auto flex flex-wrap items-center justify-between px-6 py-4">
         {{-- logo --}}
         <a wire:navigate href="{{ route('home') }}" class="flex items-center">
-            <img class="mr-4 h-14 rounded-xl" src="{{ asset('logo/constants/brand.png') }}" alt="Bomba Logo">
+            <img class="mr-4 h-14 rounded-xl" src="{{ asset('storage/logo/constants/brand.png') }}" alt="Bomba Logo">
             <div class="flex flex-col">
                 <h1 class="font-bungee text-3xl font-bold text-orange-400 dark:text-yellow-200">Bomba</h1>
                 <h3 class="text-sm font-semibold uppercase">Jurnal Pembangunan Daerah</h3>

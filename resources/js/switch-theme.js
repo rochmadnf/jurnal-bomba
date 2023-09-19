@@ -83,5 +83,5 @@ function setMode(theme) {
 
 function setBodyTexture() {
     const elTexture = document.getElementById("body-texture");
-    elTexture.style.backgroundImage = `url(${location.protocol}//${location.host}/logo/constants/brand-outline-100.png)`;
+    elTexture.style.backgroundImage = `url(${location.protocol}//${location.host}/storage/logo/constants/brand-outline-100.png)`;
 }
