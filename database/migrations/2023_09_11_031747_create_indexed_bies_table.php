@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name', 30);
             $table->string('url');
             $table->char('version', 36);
-            $table->string('width', '10');
+            $table->tinyInteger('width');
             $table->tinyInteger('order');
             $table->timestamps();
         });
