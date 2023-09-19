@@ -11,6 +11,12 @@ use Livewire\Component;
 #[Title('Beranda')]
 class Home extends Component
 {
+    public string $keyword;
+
+    public function searchIssue()
+    {
+        $this->redirect(route('search-issue', ['keyword' => $this->keyword]), true);
+    }
 
     public function mount(): void
     {

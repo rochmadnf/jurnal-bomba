@@ -1,13 +1,18 @@
 <?php
 $shortcutMenus = [
     // ['name' => '', 'url'=> '', 'icon' => ''],
+    ['name' => 'Proses Tinjauan', 'url' => route('review-process'), 'icon' => 'file-magnifying-glass'],
     ['name' => 'Fokus & Ruang Lingkup', 'url' => route('focus-and-scope'), 'icon' => 'crosshair'],
-    ['name' => 'Biaya Penulis', 'url' => route('author-fees'), 'icon' => 'currency-circle-dollar'],
+    ['name' => 'Etika Publikasi', 'url' => route('publication-ethics'), 'icon' => 'square-half'],
     ['name' => 'Cek Plagiarisme', 'url' => route('check-plagiarism'), 'icon' => 'list-checks'],
+    ['name' => 'Pernyataan Akses Terbuka', 'url' => route('open-access-statement'), 'icon' => 'lock-key-open'],
+    ['name' => 'Biaya Penulis', 'url' => route('author-fees'), 'icon' => 'currency-circle-dollar'],
+    ['name' => 'Cari Artikel', 'url' => route('search-issue'), 'icon' => 'magnifying-glass'],
+    ['name' => 'Hak Cipta & Lisensi', 'url' => route('copyright-and-license'), 'icon' => 'identification-card'],
 ];
 ?>
 
-<aside class="space-y-10 rounded-md border border-slate-300/20 px-6 py-10 md:col-span-3">
+<aside class="col-span-2 h-fit space-y-10 rounded-md border border-slate-300/20 px-6 py-10 md:col-span-3 md:ml-14">
     <div class="border-b border-b-slate-300/20 pb-6">
         <a href="#"
             class="flex items-center justify-center rounded-md bg-amber-600 px-5 py-2.5 text-white shadow-md shadow-amber-600/80 transition duration-150 hover:bg-amber-700 hover:shadow-amber-700/80">

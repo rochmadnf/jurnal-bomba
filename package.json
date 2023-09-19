@@ -18,6 +18,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "tailwindcss-hero-patterns": "^0.1.2"
+        "tailwindcss-hero-patterns": "^0.1.2",
+        "ua-parser-js": "^1.0.36"
     }
 }

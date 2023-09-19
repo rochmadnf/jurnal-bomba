@@ -1,2 +1,7 @@
 *
 !.gitignore
+!favicon
+!favicon/*
+!logo
+!logo/constants
+!logo/constants/*
