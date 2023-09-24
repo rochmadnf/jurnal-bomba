@@ -11,7 +11,7 @@ use Livewire\Component;
 #[Title('Beranda')]
 class Home extends Component
 {
-    public string $keyword;
+    public string $keyword = '';
 
     public function searchIssue()
     {
