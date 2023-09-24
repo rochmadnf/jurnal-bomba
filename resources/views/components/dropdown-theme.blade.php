@@ -5,7 +5,6 @@
             type="button">
             @svg('icon-moon-stars', 'dt-icon-d h-5 w-5 hidden')
             @svg('icon-sun', 'dt-icon-l h-5 w-5 hidden')
-            @svg('icon-desktop', 'dt-icon-s h-5 w-5')
         </button>
         <div class="absolute -right-0.5 -top-0.5" x-cloak x-show="open" id="ddThemeList">
             <div
