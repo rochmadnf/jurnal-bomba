@@ -10,7 +10,7 @@
                 <h1 class="font-bold tracking-wide dark:text-white md:text-3xl">Volume 3 No 1 2023</h1>
             </header>
             <article
-                class="prose w-full overflow-y-auto dark:prose-invert prose-p:leading-8 prose-p:tracking-wider dark:prose-p:text-white md:h-[200px]">
+                class="prose w-full overflow-y-auto dark:prose-invert prose-p:leading-8 prose-p:tracking-wider dark:prose-p:text-white/80 md:h-[200px]">
                 <p>
                     Edisi ini berisi 6 artikel yang semuanya berbahasa Indonesia yang meliputi pengetahuan di bidang
                     politik,
