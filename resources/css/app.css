@@ -36,8 +36,8 @@
 }
 
 .nav-link {
-    @apply rounded-full px-3 py-1.5 font-medium uppercase transition-all duration-200 hover:bg-orange-400 hover:text-white hover:shadow-lg hover:shadow-orange-400/80 focus:bg-orange-400
-    focus:text-white focus:shadow-md focus:shadow-orange-400/80 dark:hover:bg-dark-accent-1 dark:hover:shadow-dark-accent-1/80 dark:focus:bg-dark-accent-1 dark:focus:shadow-dark-accent-1/80;
+    @apply rounded-md px-3 py-1.5 font-medium uppercase transition-all duration-[400ms] hover:bg-orange-400 hover:text-white hover:shadow-orange-400/80
+ group-hover:text-white group-hover:shadow-md dark:hover:bg-dark-accent-1 group-hover:dark:bg-dark-accent-1 group-hover:dark:shadow-dark-accent-1/80;
 }
 
 .nav-link.active {

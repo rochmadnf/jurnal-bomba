@@ -43,15 +43,18 @@ $menuItems = [
             {{ $slot }}
         </a>
     @else
-        <div class="relative" x-data="{ isOpen: false }">
-            <button {{ $attributes->merge(['class' => $classes]) }} @click="isOpen = !isOpen">
+        <div class="group relative">
+            <button {{ $attributes->merge(['class' => $classes]) }}>
                 {{ $slot }}
             </button>
-            <div x-cloak x-show="isOpen" @click.away="isOpen = !isOpen"
-                class="absolute left-0 top-12 min-w-[10rem] rounded-md dark:bg-amber-600 dark:text-slate-50">
-                <div class="flex flex-col py-2 uppercase">
+
+            <div
+                class="absolute left-0 top-9 min-w-[10rem] scale-0 transition-transform duration-[400ms] ease-in-out group-hover:scale-100">
+                <div class="h-2 w-full"></div>
+                <div
+                    class="flex flex-col rounded-md bg-orange-400 py-2 uppercase text-slate-900 dark:bg-amber-600 dark:text-white">
                     @foreach ($menuItems["$menuName"] as $menuItem)
-                        <a wire:navigate href="{{ $menuItem['url'] }}" @click="isOpen=!isOpen"
+                        <a wire:navigate href="{{ $menuItem['url'] }}"
                             class="menu-item {{ url()->current() === $menuItem['url'] ? 'active' : '' }}">{{ $menuItem['label'] }}</a>
                     @endforeach
                 </div>
