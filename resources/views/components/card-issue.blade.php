@@ -1,7 +1,8 @@
 <div class="rounded-lg p-6 shadow dark:shadow-slate-100/20 dark:heropattern-cutout-slate-600/10">
     <div class="grid grid-cols-12 gap-x-4">
         <section aria-label="Halaman Depan" class="md:col-span-4">
-            <img class="rounded-md shadow-md dark:shadow-orange-700" src="{{ asset('img/cover.jpg') }}" alt="Issue Cover">
+            <img class="rounded-md shadow-md dark:shadow-orange-700" src="{{ asset('storage/img/cover.jpg') }}"
+                alt="Issue Cover">
         </section>
         <section aria-label="Deskripsi" class="flex flex-col justify-between md:col-span-8">
             <header>

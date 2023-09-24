@@ -19,7 +19,7 @@
     <div role="contentinfo" class="mt-5 flex gap-4" aria-label="Profil Akademik">
         <div class="group relative">
             <a href="#">
-                <img class="h-6 w-6" src="{{ asset('logo/social-media/sinta.png') }}" alt="Sinta Logo">
+                <img class="h-6 w-6" src="{{ asset('storage/logo/social-media/sinta.png') }}" alt="Sinta Logo">
             </a>
 
             <div
