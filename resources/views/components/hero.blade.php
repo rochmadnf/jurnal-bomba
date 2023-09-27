@@ -15,7 +15,7 @@
             {{-- keyword --}}
             <div class="group/search mb-5">
                 <div
-                    class="flex items-center space-x-1 rounded-md border border-slate-700/20 py-4 pl-2 pr-4 focus:border-orange-400 group-focus-within/search:border-orange-400 group-focus-within/search:ring-1 group-focus-within/search:ring-orange-400 dark:border-slate-300/30 dark:focus:border-amber-600 dark:group-focus-within/search:border-amber-600 dark:group-focus-within/search:ring-amber-600">
+                    class="flex items-center space-x-1 rounded-md border border-slate-700/20 py-4 pl-2 pr-4 focus:border-orange-400 group-focus-within/search:border-orange-400 group-focus-within/search:bg-white group-focus-within/search:ring-1 group-focus-within/search:ring-orange-400 dark:border-slate-300/30 dark:focus:border-amber-600 dark:group-focus-within/search:border-amber-600 dark:group-focus-within/search:bg-slate-900 dark:group-focus-within/search:ring-amber-600">
                     <input type="text" name="keyword"
                         class="block w-full border-0 bg-transparent text-xl text-slate-900 outline-0 placeholder:uppercase placeholder:text-slate-600 focus:border-none focus:outline-0 focus:ring-0 dark:text-white"
                         placeholder="Katakunci..." wire:model="keyword">
